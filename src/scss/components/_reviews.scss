@@ -1,0 +1,92 @@
+.reviews {
+    max-width: 1170px;
+    margin-bottom: 180px;
+    
+    &__container-card {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    &__card {
+        max-width: 400px;
+        min-width: 270px;
+        padding: 30px;
+        margin-bottom: 60px;
+        border: 2px solid #DDDDDD;
+        border-radius: 10px;
+    }
+
+    &__card--active:hover {
+        border: 2px solid $tertiary-color;
+        box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    &__card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    &__info {
+        padding: 0px 20px;
+        flex-grow: 1;
+    }
+
+    &__points {
+        margin-right: 10px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__arrow-left {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+        padding: 20px;
+        font-size: $lg-text;
+        border: 2px solid $tertiary-color;
+        border-radius: 50%;
+        background: white;
+        color: $tertiary-color;
+    }
+
+    &__arrow-left--active:hover {
+        background: $tertiary-color;
+    }
+
+    &__arrow-right--active:hover {
+        background: $tertiary-color;
+    }
+
+    &__arrow-right {
+        width: 60px;
+        height: 60px;
+        font-size: $lg-text;
+        padding: 20px;
+        border: 2px solid $tertiary-color;
+        border-radius: 50%;
+        background: white;
+        color: $tertiary-color;
+    }
+
+    &__dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: none;
+        background: #DDE0E4;
+    }
+
+    &__dot--active:hover {
+        width: 45px;
+        background-color: $tertiary-color;
+        border: none;
+        border-radius: 35%;
+    }
+}

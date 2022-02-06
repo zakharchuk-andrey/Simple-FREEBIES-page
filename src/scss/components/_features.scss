@@ -1,0 +1,55 @@
+.feature {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: 10em;
+    }
+
+    &__title {
+        margin-bottom: 1.1em;
+        font-size: $xxl-text;
+        font-weight: 500;
+        line-height: 50px;
+        color:$primary-color;
+    }
+
+    &__subtitle {
+        margin-bottom: 1.1em;
+        font-size: $sm-text;
+        font-weight: 400;
+        line-height: 30px;
+        color: $secondary-color;
+    }
+
+    &__list {
+        list-style:none ;
+        padding: 0;
+    }
+
+    &__item {
+        display: flex;
+        margin: 15px 5px;   
+        font-size: $xs-text;
+        font-weight: 400;
+        line-height: 30px;
+        color: $secondary-color;
+    }
+
+    &__img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    &__images {
+        width: 508px;
+        height: 414px;
+    }
+
+}
