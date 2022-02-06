@@ -1,5 +1,6 @@
 # Simple-FREEBIES-page
 
-<img src='preview.png'>
 
-### Demo version
+### DEMO VERSION
+
+<img src='preview.png'>
