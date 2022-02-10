@@ -12,4 +12,4 @@
 - Usage `SCSS` (mixins, variables)
 - Collected with `Parcel`
 
-## [FREEBIES]()
+## [FREEBIES](https://zakharchuk-andrey.github.io/Simple-FREEBIES-page/)
