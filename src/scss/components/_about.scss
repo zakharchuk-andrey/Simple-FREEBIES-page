@@ -1,0 +1,93 @@
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @include sm($screen-sm-max) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: 760px;
+    border: 2px solid $light-color;
+    border-radius: 10px;
+
+    @include lg($screen-lg-max) {
+      width: 250px;
+      height: 700px;
+    }
+
+    @include sm($screen-sm-max) {
+      height: 700px;
+      margin-top: 10px;
+    }
+  }
+
+  &__img {
+    width: 145px;
+    height: 165px;
+    margin: 79px 93px 30px 93px;
+
+    @include lg($screen-lg-max) {
+      width: 100px;
+      height: 110px;
+      margin: 30px 50px 10px 50px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.9em;
+    @include font($md-text, 700, 30px);
+    color: $primary-color;
+  }
+
+  &__list {
+    flex-grow: 1;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6em;
+    @include font($xs-text, 400, 30px);
+    color: $secondary-color;
+  }
+
+  &__prise {
+    @include font($xl-text, 600, 30px);
+    color: $primary-color;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    @include font($xl-text, 400, 30px);
+    color: $primary-color;
+  }
+
+  &__btn-select {
+    margin-bottom: 50px;
+    padding: 13px 63px;
+    @include font($sm-text, 700, 19px);
+    background: $white-color;
+    border: 2px solid $tertiary-color;
+    border-radius: 50px;
+    color: $tertiary-color;
+  }
+
+  &__products--active:hover {
+    border: 2px solid $tertiary-color;
+  }
+
+  &__btn-select--active:hover {
+    background: $tertiary-color;
+    color: $white-color;
+    box-shadow: 1px 20px 15px rgba(245, 56, 56, 0.35);
+  }
+}

@@ -1,0 +1,64 @@
+.heading {
+  max-width: 35%;
+  margin: 70px auto;
+  padding: 0;
+  text-align: center;
+
+  @include lg($screen-lg-max) {
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  @include md($screen-md-max) {
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  @include sm($screen-sm-max) {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  &__title {
+    @include font($xxl-text, 500, 50px);
+    color: $primary-color;
+
+    @include lg($screen-lg-max) {
+      font-size: $xxl-text;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+
+    @include md($screen-md-max) {
+      font-size: $xxl-text;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+
+    @include sm($screen-sm-max) {
+      font-size: $xl-text;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__subtitle {
+    @include font($sm-text, 400, 30px);
+    color: $secondary-color;
+
+    @include lg($screen-lg-max) {
+      font-size: $md-text;
+      line-height: 20px;
+    }
+
+    @include md($screen-md-max) {
+      font-size: $md-text;
+      line-height: 20px;
+    }
+
+    @include sm($screen-sm-max) {
+      font-size: $md-text;
+      line-height: 20px;
+    }
+  }
+}

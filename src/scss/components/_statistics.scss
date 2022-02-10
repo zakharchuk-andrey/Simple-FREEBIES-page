@@ -1,0 +1,86 @@
+.statistics {
+  display: flex;
+  max-width: 1140px;
+  margin: 85px auto;
+  padding: 72px 91px;
+  box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  @include lg($screen-lg-max) {
+    margin: 40px auto;
+    padding: 30px 30px;
+  }
+
+  @include md($screen-md-max) {
+    margin: 40 auto;
+    padding: 30px 30px;
+  }
+
+  @include sm($screen-sm-max) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 40px auto;
+    padding: 10px 15px;
+  }
+
+  &__details {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding-left: 90px;
+
+    @include lg($screen-lg-max) {
+      padding-left: 40px;
+    }
+
+    @include md($screen-md-max) {
+      padding-left: 40px;
+    }
+
+    @include sm($screen-sm-max) {
+      padding-left: 10px;
+      margin-top: 15px;
+    }
+  }
+
+  &__details:not(:last-child) {
+    border-right: 2px solid #eeeff2;
+
+    @include sm($screen-sm-max) {
+      border: none;
+    }
+  }
+
+  &__img {
+    width: 55px;
+    height: 55px;
+    margin-right: 36px;
+
+    @include sm($screen-sm-max) {
+      width: 45px;
+      height: 45px;
+      margin-right: 16px;
+    }
+  }
+
+  &__content-number {
+    @include font($xl-text, 700, 30px);
+    color: $primary-color;
+
+    @include sm($screen-sm-max) {
+      font-size: $lg-text;
+      line-height: 20px;
+    }
+  }
+
+  &__content-text {
+    @include font($lg-text, 400, 30px);
+    color: $secondary-color;
+
+    @include sm($screen-sm-max) {
+      font-size: $md-text;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.feature {
+    display: flex;
+    margin: 0 auto;
+
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        margin-left: 10em;
+
+        @include lg ($screen-lg-max) {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        @include md ($screen-md-max) {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        @include sm ($screen-sm-max) {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        margin-top: 1.4em;
+        margin-bottom: 0.6em;
+        @include font ($xxl-text,500,50px);
+        color:$primary-color;
+
+        @include md ($screen-md-max) {
+            line-height: 40px;
+        }
+
+        @include sm ($screen-sm-max) {
+            font-size: $xl-text;
+            line-height: 30px;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 1.2em;
+        @include font ($sm-text,400,30px);
+        color: $secondary-color;
+
+        @include lg ($screen-lg-max) {
+            font-size: $md-text;
+            line-height: 25px;
+        }
+
+        @include md ($screen-md-max) {
+            font-size: $md-text;
+            line-height: 25px;
+        }
+
+        @include sm ($screen-sm-max) {
+            line-height: 25px;
+        }
+    }
+
+    &__list {
+        list-style:none ;
+        padding: 0;
+    }
+
+    &__item {
+        display: flex;
+        margin: 15px 5px; 
+        @include font ($xs-text,400,30px);  
+        color: $secondary-color;
+
+        @include lg ($screen-lg-max) {
+            font-size: $sm-text;
+            margin: 0.5em 5em;
+            line-height: 25px;
+        }
+
+        @include md ($screen-md-max) {
+            font-size: $sm-text;
+            margin: 10px 5px;
+            line-height: 25px;
+        }
+
+        @include sm ($screen-sm-max) {
+            margin: 10px 5px;
+            line-height: 25px;
+        }
+    }
+
+    &__img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    &__images {
+        width: 508px;
+        height: 414px;
+
+        @include lg ($screen-lg-max) {
+            width: 350px;
+            height: 300px;
+            margin-top: 40px;
+        }
+
+        @include md ($screen-md-max) {
+            display: none;
+        }
+
+        @include sm ($screen-sm-max) {
+            display: none;
+        }
+    }
+}

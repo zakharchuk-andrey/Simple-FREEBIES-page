@@ -1,0 +1,63 @@
+.subscribe {
+  position: absolute;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1140px;
+  padding: 58px 70px;
+  background: $white-color;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 10px;
+
+  @include lg($screen-lg-max) {
+    width: 100%;
+  }
+
+  @include sm($screen-sm-max) {
+    width: 95%;
+    padding: 20px 25px;
+  }
+
+  &__content {
+    max-width: 410px;
+  }
+
+  &__title {
+    @include font($xxl-text, 500, 45px);
+    color: $primary-color;
+
+    @include sm($screen-sm-max) {
+      font-size: $lg-text;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__subtitle {
+    @include font($sm-text, 400, 30px);
+    color: $secondary-color;
+
+    @include sm($screen-sm-max) {
+      line-height: 20px;
+    }
+  }
+
+  .button {
+    width: 250px;
+    padding: 17px 65px;
+    font-size: $sm-text;
+    font-weight: 700;
+    line-height: 25px;
+    border: none;
+    border-radius: 10px;
+    background: $tertiary-color;
+    color: $white-color;
+    box-shadow: 0px 25px 20px rgba(245, 56, 56, 0.35);
+
+    @include sm($screen-sm-max) {
+      width: 150px;
+      padding: 10px 30px;
+    }
+  }
+}

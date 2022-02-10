@@ -1,0 +1,151 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 50px;
+    margin-left: 70px;
+
+    @include lg($screen-lg-max) {
+      margin-left: 20px;
+    }
+
+    @include md($screen-md-max) {
+      width: 100%;
+      align-items: center;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    @include sm($screen-sm-max) {
+      width: 100%;
+      align-items: center;
+      margin: 0 auto;
+      padding: 30px 10px 0px 10px;
+    }
+  }
+
+  &__title {
+    @include font(50px, 500, 70px);
+    color: $primary-color;
+
+    @include lg($screen-lg-max) {
+      font-size: 40px;
+      line-height: 55px;
+    }
+
+    @include md($screen-md-max) {
+      font-size: 40px;
+      line-height: 55px;
+    }
+
+    @include sm($screen-sm-max) {
+      font-size: 32px;
+      line-height: 45px;
+    }
+  }
+
+  &__title-vpn {
+    @include font(50px, 700, 70px);
+    color: $primary-color;
+
+    @include lg($screen-lg-max) {
+      font-size: 40px;
+      line-height: 55px;
+    }
+
+    @include md($screen-md-max) {
+      font-size: 40px;
+      line-height: 55px;
+    }
+
+    @include sm($screen-sm-max) {
+      font-size: 32px;
+      line-height: 45px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 0.5em;
+    @include font($sm-text, 400, 30px);
+    color: $secondary-color;
+
+    @include lg($screen-lg-max) {
+      font-size: $lg-text;
+    }
+
+    @include md($screen-md-max) {
+      font-size: $lg-text;
+    }
+
+    @include sm($screen-sm-max) {
+      font-size: $xs-text;
+    }
+  }
+
+  &__subtitle-vpn {
+    @include font($sm-text, 600, 30px);
+    color: $secondary-color;
+
+    @include lg($screen-lg-max) {
+      font-size: $lg-text;
+    }
+
+    @include md($screen-md-max) {
+      font-size: $lg-text;
+    }
+
+    @include sm($screen-sm-max) {
+      font-size: $xs-text;
+    }
+  }
+
+  .button {
+    width: 250px;
+    padding: 17px 77px;
+    margin-top: 2em;
+    @include font($sm-text, 700, 25px);
+    border: none;
+    border-radius: 10px;
+    background: $tertiary-color;
+    color: $white-color;
+    box-shadow: 0px 25px 20px rgba(245, 56, 56, 0.35);
+  }
+
+  &__img {
+    margin-top: 50px;
+
+    @include lg($screen-lg-max) {
+      padding-top: 50px;
+    }
+
+    @include md($screen-md-max) {
+      display: none;
+    }
+
+    @include sm($screen-sm-max) {
+      display: none;
+    }
+  }
+
+  &__page {
+    width: 540px;
+    height: 326px;
+
+    @include lg($screen-lg-max) {
+      width: 420px;
+      height: 280px;
+    }
+
+    @include md($screen-md-max) {
+      display: none;
+    }
+
+    @include sm($screen-sm-max) {
+      display: none;
+    }
+  }
+}
