@@ -1,6 +1,6 @@
 # Simple-FREEBIES-page
 
- **The site provides vpn services. 
+ **The site provides #VPN services. 
  The functions and price of each package are described. 
  The map and user reviews around the world are presented.**
 
